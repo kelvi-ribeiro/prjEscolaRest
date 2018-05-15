@@ -46,6 +46,7 @@ public class AlunoService {
 					dao.getAluno(matricula).isMatriculaAtiva(), 
 					null, 
 					dao.getAluno(matricula).getCurso().getCodigo(),
+					dao.getAluno(matricula).getIdade(),
 					dao.getAluno(matricula).getTelefones());
 			return alunoDTO;
 		} catch (DaoException e) {
