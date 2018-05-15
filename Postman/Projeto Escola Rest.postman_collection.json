@@ -1,0 +1,595 @@
+{
+	"info": {
+		"name": "Projeto Escola Rest",
+		"_postman_id": "fd229801-b899-bed8-fcdd-31a6681f2f66",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Curso",
+			"description": "",
+			"item": [
+				{
+					"name": "{{host}}/curso",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n  <codigo>1</codigo>\n  <nome>Sistemas de Informação</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/curso",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"curso"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/curso",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n  <codigo>1</codigo>\n  <nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/curso",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"curso"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/curso ",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n  <codigo>1</codigo>\n  <nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/curso",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"curso"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/curso",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n  <codigo>1</codigo>\n  <nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/curso/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"curso",
+								"1"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Disciplina",
+			"description": "",
+			"item": [
+				{
+					"name": "{{host}}/disciplina",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<disciplina>\n  <codigo>1</codigo>\n  <nome>Tópicos de Programação</nome>\n   <curso>1</curso>\n</disciplina>"
+						},
+						"url": {
+							"raw": "{{host}}/disciplina",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"disciplina"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/disiciplina",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<disciplina>\n  <codigo>1</codigo>\n  <nome>Teste</nome>\n   <curso>1</curso>\n</disciplina>"
+						},
+						"url": {
+							"raw": "{{host}}/disciplina",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"disciplina"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/disciplina",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n  <codigo>1</codigo>\n  <nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/disciplina/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"disciplina",
+								"1"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/disciplina",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n  <codigo>1</codigo>\n  <nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/disciplina/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"disciplina",
+								"1"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Turma",
+			"description": "",
+			"item": [
+				{
+					"name": "{{host}}/turma",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<turma>\n  <codigo>1</codigo>\n  <ano>2018</ano>\n  <semestre>2018</semestre>\n  <disciplina>1</disciplina>\n</turma>"
+						},
+						"url": {
+							"raw": "{{host}}/turma",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"turma"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/turma",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<disciplina>\n\t<codigo>1</codigo>\n\t<nome>Teste</nome>\n\t<curso>1</curso>\n</disciplina>"
+						},
+						"url": {
+							"raw": "{{host}}/disciplina",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"disciplina"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/turma",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n  <codigo>1</codigo>\n  <nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/turma/1/2018/2018",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"turma",
+								"1",
+								"2018",
+								"2018"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/disciplina",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n  <codigo>1</codigo>\n  <nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/turma/1/2018/2018",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"turma",
+								"1",
+								"2018",
+								"2018"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Aluno",
+			"description": "",
+			"item": [
+				{
+					"name": "{{host}}/aluno",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<aluno>\n\t<matricula>1</matricula>\n\t<nome>Kelvi Martins</nome>\n\t<dtNascimento>26/06/1997</dtNascimento>\n\t<idade>20</idade>\n\t<matriculaAtiva>true</matriculaAtiva>\n\t<estadoCivilDTO>casado</estadoCivilDTO>\n\t<telefones>\n\t\t<telefone>2758223</telefone>\n\t\t<telefone>968493234</telefone>\n\t</telefones>\n\t<curso>1</curso>\n</aluno>"
+						},
+						"url": {
+							"raw": "{{host}}/aluno",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"aluno"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/aluno",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<disciplina>\n\t<codigo>1</codigo>\n\t<nome>Teste</nome>\n\t<curso>1</curso>\n</disciplina>"
+						},
+						"url": {
+							"raw": "{{host}}/disciplina",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"disciplina"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/aluno",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n\t<codigo>1</codigo>\n\t<nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/aluno/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"aluno",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/aluno",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n\t<codigo>1</codigo>\n\t<nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/aluno/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"aluno",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Inscricao",
+			"description": "",
+			"item": [
+				{
+					"name": "{{host}}/inscricao",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<inscricao>\n\t<avaliacao1>10</avaliacao1>\n\t<avaliacao2>9</avaliacao2>\n\t<numFaltas>6</numFaltas>\n\t<situacao>cursando</situacao>\n\t<aluno>1</aluno>\n\t<codigo>1</codigo>\n\t<ano>2018</ano>\n\t<semestre>2018</semestre>\n\t\n</inscricao>"
+						},
+						"url": {
+							"raw": "{{host}}/inscricao",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"inscricao"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/inscricao",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<inscricao>\n\t<avaliacao1>10</avaliacao1>\n\t<avaliacao2>9</avaliacao2>\n\t<numFaltas>6</numFaltas>\n\t<situacao>cursando</situacao>\n\t<aluno>1</aluno>\n\t<codigo>1</codigo>\n\t<ano>2018</ano>\n\t<semestre>2018</semestre>\n\t\n</inscricao>"
+						},
+						"url": {
+							"raw": "{{host}}/inscricao",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"inscricao"
+							]
+						},
+						"description": "POST - CURSO"
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/inscricao",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n\t<codigo>1</codigo>\n\t<nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/turma/1/2020/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"turma",
+								"1",
+								"2020",
+								"2"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{host}}/inscricao",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/xml"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "<curso>\n\t<codigo>1</codigo>\n\t<nome>Medicina</nome>\n</curso>"
+						},
+						"url": {
+							"raw": "{{host}}/disciplina/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"disciplina",
+								"1"
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
